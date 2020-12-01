@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:intern_blog/screens/favorite_screen.dart';
+import 'package:intern_blog/screens/home_screen.dart';
 import 'package:intern_blog/screens/search_screen.dart';
 import 'package:intern_blog/utilities/universal_variables.dart';
 
@@ -32,12 +33,10 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    double _labelFontSize = 10;
     return Scaffold(
-      backgroundColor: UniversalVariables.blackColor,
       body: PageView(
         children: <Widget>[
-          Container(child: Home()),
+          Container(child: MyHomePage()),
           Container(child: FavoriteScreen()),
           Container(child: SearchScreen()),
         ],
@@ -47,9 +46,9 @@ class _HomeState extends State<Home> {
       ),
       bottomNavigationBar: Container(
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 10),
+          padding: EdgeInsets.symmetric(vertical: 0),
           child: CupertinoTabBar(
-            backgroundColor: UniversalVariables.blackColor,
+            backgroundColor: Colors.white,
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(
@@ -57,6 +56,7 @@ class _HomeState extends State<Home> {
                   color: (_page == 0)
                       ? UniversalVariables.greyColor
                       : UniversalVariables.blackColor,
+                  size: 22,
                 ),
               ),
               BottomNavigationBarItem(
@@ -65,6 +65,7 @@ class _HomeState extends State<Home> {
                   color: (_page == 1)
                       ? UniversalVariables.greyColor
                       : UniversalVariables.blackColor,
+                  size: 22,
                 ),
               ),
               BottomNavigationBarItem(
@@ -73,6 +74,7 @@ class _HomeState extends State<Home> {
                   color: (_page == 2)
                       ? UniversalVariables.greyColor
                       : UniversalVariables.blackColor,
+                  size: 22,
                 ),
               ),
             ],

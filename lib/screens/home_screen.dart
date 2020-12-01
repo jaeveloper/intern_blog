@@ -33,8 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ],
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
+        physics: BouncingScrollPhysics(),
         children: [
           Padding(
             padding:
