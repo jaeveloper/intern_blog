@@ -54,8 +54,8 @@ class _HomeState extends State<Home> {
                 icon: Icon(
                   Feather.home,
                   color: (_page == 0)
-                      ? UniversalVariables.greyColor
-                      : UniversalVariables.blackColor,
+                      ? UniversalVariables.blackColor
+                      : UniversalVariables.greyColor,
                   size: 22,
                 ),
               ),
@@ -63,8 +63,8 @@ class _HomeState extends State<Home> {
                 icon: Icon(
                   Feather.heart,
                   color: (_page == 1)
-                      ? UniversalVariables.greyColor
-                      : UniversalVariables.blackColor,
+                      ? UniversalVariables.blackColor
+                      : UniversalVariables.greyColor,
                   size: 22,
                 ),
               ),
@@ -72,8 +72,8 @@ class _HomeState extends State<Home> {
                 icon: Icon(
                   Feather.search,
                   color: (_page == 2)
-                      ? UniversalVariables.greyColor
-                      : UniversalVariables.blackColor,
+                      ? UniversalVariables.blackColor
+                      : UniversalVariables.greyColor,
                   size: 22,
                 ),
               ),
