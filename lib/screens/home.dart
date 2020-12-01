@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
                   color: (_page == 0)
                       ? UniversalVariables.blackColor
                       : UniversalVariables.greyColor,
-                  size: 22,
+                  size: 20,
                 ),
               ),
               BottomNavigationBarItem(
@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
                   color: (_page == 1)
                       ? UniversalVariables.blackColor
                       : UniversalVariables.greyColor,
-                  size: 22,
+                  size: 20,
                 ),
               ),
               BottomNavigationBarItem(
@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
                   color: (_page == 2)
                       ? UniversalVariables.blackColor
                       : UniversalVariables.greyColor,
-                  size: 22,
+                  size: 20,
                 ),
               ),
             ],
