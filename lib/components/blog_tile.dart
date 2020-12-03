@@ -2,6 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BlogTile extends StatelessWidget {
+  final String leadingImage;
+  final String tagText;
+  final String tagColor;
+  final String topText;
+  final String bottomText;
+  final String time;
+  final String numComments;
+
+  const BlogTile(
+      {this.leadingImage,
+      this.tagText,
+      this.tagColor,
+      this.topText,
+      this.bottomText,
+      this.time,
+      this.numComments});
+
   @override
   Widget build(BuildContext context) {
     return Row(
