@@ -293,25 +293,6 @@ class _RegScreenState extends State<RegScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  GestureDetector(
-                    onTap: () {
-                      //chooseFile();
-                    },
-                    child: Container(
-                      height: 150,
-                      width: 150,
-                      child: CircleAvatar(
-                        backgroundColor: Colors.transparent,
-                        backgroundImage: _image == null
-                            ? AssetImage('assets/images/dummy.png')
-                            : FileImage(_image),
-                        //NetworkImage('https://firebasestorage.googleapis.com/v0/b/xperion-vxatbk.appspot.com/o/image_picker82875791.jpg?alt=media&token=09bf83c8-6d3b-4626-9058-85294f457b70'),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 13,
-                  ),
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[

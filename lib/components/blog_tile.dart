@@ -41,11 +41,18 @@ class BlogTile extends StatelessWidget {
               padding: const EdgeInsets.only(
                   top: 35, bottom: 0, left: 23, right: 10),
               child: Container(
-                height: MediaQuery.of(context).size.height * .035,
-                width: MediaQuery.of(context).size.width * .18,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.indigo,
-                    borderRadius: BorderRadius.circular(5)),
+                    borderRadius: BorderRadius.circular(4)),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 4.5, vertical: 2),
+                  child: Text(
+                    'FASHION',
+                    style: TextStyle(color: Colors.white, fontSize: 10),
+                  ),
+                ),
               ),
             ),
             Padding(

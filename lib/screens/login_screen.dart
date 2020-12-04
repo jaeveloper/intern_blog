@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intern_blog/screens/home.dart';
+import 'package:intern_blog/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -191,10 +193,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'Agoragram',
+                    'Intern Blog',
                     style: TextStyle(
                       fontFamily: 'Billabong',
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 50.0,
                     ),
                   ),
@@ -288,7 +290,15 @@ class _LoginScreenState extends State<LoginScreen> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Future.delayed(Duration(seconds: 2), () {
+                              submitted = true;
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Home()));
+                            });
+                          },
                           color: Colors.blue,
                           disabledColor: Colors.blue[800],
                           disabledTextColor: Colors.white60,
@@ -320,9 +330,12 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             GestureDetector(
               onTap: () {
-                // Navigator.push(context, MaterialPageRoute(
-                //   builder: (context) => RegScreen(),
-                // ));
+                submitted = true;
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RegScreen(),
+                    ));
               },
               child: Container(
                 height: 40,
@@ -330,23 +343,23 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Divider(
-                      color: Colors.white,
+                      color: Colors.black,
                       height: 0,
                     ),
                     SizedBox(
-                      height: 15,
+                      height: 10,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
                           "Don't have an account? ",
-                          style: TextStyle(color: Colors.white70, fontSize: 11),
+                          style: TextStyle(color: Colors.black, fontSize: 11),
                         ),
                         Text(
                           'Sign Up.',
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 11,
                               fontWeight: FontWeight.bold),
                         ),
