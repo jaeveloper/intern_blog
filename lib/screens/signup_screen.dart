@@ -293,6 +293,17 @@ class _RegScreenState extends State<RegScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+                  Text(
+                    'Intern Blog',
+                    style: TextStyle(
+                      fontFamily: 'Billabong',
+                      color: Colors.black,
+                      fontSize: 50.0,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 13,
+                  ),
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
