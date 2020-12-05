@@ -20,9 +20,17 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0,
         leading: Padding(
             padding: EdgeInsets.only(top: 15, bottom: 5, left: 20, right: 0),
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Colors.grey, borderRadius: BorderRadius.circular(26)),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(26),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+                child: Image.asset(
+                  'assets/images/girl.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
             )),
         actions: [
           Padding(
@@ -39,12 +47,20 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Padding(
             padding:
-                const EdgeInsets.only(top: 20, bottom: 0, left: 23, right: 10),
-            child: Container(
-              height: MediaQuery.of(context).size.height * .28,
-              width: MediaQuery.of(context).size.width * .89,
-              decoration: BoxDecoration(
-                  color: Colors.grey, borderRadius: BorderRadius.circular(20)),
+                const EdgeInsets.only(top: 20, bottom: 0, left: 23, right: 30),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Container(
+                height: MediaQuery.of(context).size.height * .28,
+                width: MediaQuery.of(context).size.width * .89,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                ),
+                child: Image.asset(
+                  'assets/images/4576.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
           ),
           Padding(
@@ -52,24 +68,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   const EdgeInsets.only(top: 15, bottom: 0, left: 26, right: 0),
               child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Text(
-                    'How to run a More Effective',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                    ),
-                  ))),
-          Padding(
-              padding:
-                  const EdgeInsets.only(top: 5, bottom: 0, left: 26, right: 0),
-              child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'Meeting',
-                    style: TextStyle(
-                      color: Colors.black87,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * .7,
+                    child: Text(
+                      'How to run a More Effective Meeting',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        height: 1.3,
+                      ),
                     ),
                   ))),
           Row(

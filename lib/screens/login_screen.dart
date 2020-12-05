@@ -291,8 +291,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             borderRadius: BorderRadius.circular(4.0),
                           ),
                           onPressed: () {
+                            submitted = true;
                             Future.delayed(Duration(seconds: 2), () {
-                              submitted = true;
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
